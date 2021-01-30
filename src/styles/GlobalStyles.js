@@ -24,6 +24,12 @@ export default createGlobalStyle`
             url(${openSansBold}) format('woff'); 
     }
 
+    :root {
+        --primaryFont: #3d3d3d;
+        --secondaryFont: #fff;
+        --footerBackground: #000;
+    }
+
     * {
         box-sizing: conten-box;
     }
@@ -35,6 +41,7 @@ export default createGlobalStyle`
         font-family: 'Open Sans';
         background: linear-gradient(180deg, #fff, #437274);
         min-height: 100%;
+        color: var(--primaryFont);
     }
 
 `

@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import public_transport_600 from '../assets/public_transport_600.jpg'
 
 export default function Main() {
     return(
-        <>
-            <div>
+        <StaticStyled>
+            <TextWrapper>
                 <h2>This is just a Testcase</h2>
-                <h3>Die ist ein Typoblindtext</h3>
+                <h3>Dies ist ein Typoblindtext</h3>
                 <p>
                     An ihm kann man sehen, ob alle Buchstaben da sind und wie sie 
                     aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks 
@@ -24,11 +25,28 @@ export default function Main() {
                     erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten 
                     die Zahlen, weswegen nach TypoGb.
                 </p>
-            </div>
-            <div>
-                <image scr='' alt='' />
-            </div>
-        </>
+            </TextWrapper>
+            <ImageWrapper>
+                <img src={public_transport_600} alt='Hamburg Hochbahn' />
+            </ImageWrapper>
+        </StaticStyled>
     )
 
 }
+
+const StaticStyled = styled.div`
+    background: var(--secondaryFont);
+    display: grid;
+    position: relative;
+    margin-top: -2em;
+`
+const TextWrapper = styled.div`
+    padding: 1.5em;    
+`
+const ImageWrapper = styled.div`
+    width: 100vw;
+
+    img {
+        width: 100%;
+    }
+`

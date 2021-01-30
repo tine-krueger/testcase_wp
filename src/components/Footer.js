@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 
 export default function Footer() {
+
     return(
         <BlackFooter>
             <p>Web Dev Testcase</p>
@@ -17,8 +18,8 @@ const BlackFooter = styled.div`
     bottom: -1em;
     left: 0;
     display: grid;
-    background: #000;
-    color: #fff;
+    background: var(--footerBackground);
+    color: var(--secondaryFont);
 
     p {
         justify-self: center;
