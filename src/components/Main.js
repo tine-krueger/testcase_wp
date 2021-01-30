@@ -35,10 +35,7 @@ export default function Main() {
 }
 
 const StaticStyled = styled.div`
-    background: var(--secondaryFont);
     display: grid;
-    position: relative;
-    margin-top: -2em;
 `
 const TextWrapper = styled.div`
     padding: 1.5em;    

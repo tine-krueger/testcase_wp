@@ -8,7 +8,6 @@ export default function Header() {
             <Headline>
                 <h1>Moin Moin</h1>
             </Headline>
-           
         </HeaderElphi>
     )
 }
@@ -25,16 +24,14 @@ const HeaderElphi =  styled.div`
         content: '';
         display: block;
         background-image: radial-gradient(#3e3e3e 33%, transparent 33%);
-        backdrop-filter: saturate(2);
+        backdrop-filter: saturate(1.3);
         background-size: 3px 3px;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-
     }
-
 `
 const Headline = styled.div`
     background: rgba(0,0,0,.2);

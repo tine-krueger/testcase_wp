@@ -15,7 +15,7 @@ const BlackFooter = styled.div`
     padding: 1em 0;
     width: 100%;
     position: absolute;
-    bottom: -1em;
+    bottom: -11em;
     left: 0;
     display: grid;
     background: var(--footerBackground);

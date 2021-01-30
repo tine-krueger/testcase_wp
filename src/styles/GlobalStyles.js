@@ -28,6 +28,7 @@ export default createGlobalStyle`
         --primaryFont: #3d3d3d;
         --secondaryFont: #fff;
         --footerBackground: #000;
+        --link: #de5f49;
     }
 
     * {

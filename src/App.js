@@ -1,14 +1,11 @@
 import styled from 'styled-components/macro'
+import LandingPage from './pages/LandingPage'
 import Footer from './components/Footer'
-import Header from './components/Header'
-import Main from './components/Main'
-
 
 export default function App() {
   return (
     <AppStyled>
-      <Header />
-      <Main />
+      <LandingPage />
       <Footer />
     </AppStyled>
   );
