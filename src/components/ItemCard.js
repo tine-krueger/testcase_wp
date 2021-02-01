@@ -22,25 +22,29 @@ export default function ItemCard(item) {
 
 const Card = styled.li`
     background: var(--cards);
-    display: grid;
-    gap: 0 1em;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2em;
     
     img {
         max-width: 100%;
-        height: auto;
+        object-fit: cover;
+        
     }
 
     @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+
+        img {
+            max-width: 45%;
+            align-self: flex-start;*/
+        }
     }
 
     @media (min-width: 992px) {
-        grid-template-columns: 2fr 5fr;
-    }
-
-    @media (min-width: 1200px) {
-        grid-template-columns: 1fr 3fr;
+        img {
+            max-width: 30%;
+        }
     }
 `
 const Text = styled.div`
