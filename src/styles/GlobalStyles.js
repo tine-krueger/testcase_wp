@@ -29,10 +29,11 @@ export default createGlobalStyle`
         --secondaryFont: #fff;
         --footerBackground: #000;
         --link: #de5f49;
+        --cards: #eee;
     }
 
     * {
-        box-sizing: conten-box;
+        box-sizing: content-box;
     }
 
     body,html {
@@ -43,6 +44,11 @@ export default createGlobalStyle`
         background: linear-gradient(180deg, #fff, #437274);
         min-height: 100%;
         color: var(--primaryFont);
+    }
+
+    h3 {
+        font-weight: 400;
+        text-transform: uppercase;
     }
 
 `

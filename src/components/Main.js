@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import public_transport_600 from '../assets/public_transport_600.jpg'
 
 export default function Main() {
@@ -38,7 +38,7 @@ const StaticStyled = styled.div`
     display: grid;
 `
 const TextWrapper = styled.div`
-    padding: 1.5em;    
+    padding: 1.5em;   
 `
 const ImageWrapper = styled.div`
     width: 100vw;

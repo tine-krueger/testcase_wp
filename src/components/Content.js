@@ -14,12 +14,10 @@ export default function Content() {
         <ContentStyled>
             <Main />
             <Divider>Welcome to Hamburg</Divider>
-            <p>
-                See  
-                <Link to="/items?number=all" > all items </Link>
-                or only the  
-                <Link to="/items?number=3" > first three </Link>
-            </p>
+            <NavText>
+                See <Link to="/items?number=all" >all items</Link> or only 
+                the <Link to="/items?number=3" >first three</Link>
+            </NavText>
             <DynamicItems  number={query.get('number') !== null ? query.get('number') : 'all'}/>
         </ContentStyled>
     )
@@ -33,5 +31,14 @@ const ContentStyled = styled.div`
     background: var(--secondaryFont);
     position: relative;
     margin-top: -2em;
+
 `
 
+const NavText = styled.p`
+    padding: 1em;
+    font-weight: bold;
+
+    a {
+        color: var(--link);
+    }
+`
