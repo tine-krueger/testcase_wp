@@ -13,7 +13,6 @@ export function getItems() {
 
     } catch (error) {
         return { error: 'Json data not available!'}
-
     }
 
 }

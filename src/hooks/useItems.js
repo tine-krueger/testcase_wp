@@ -28,7 +28,7 @@ export default function useItems(number) {
 }
 
 export function getExcerpt(item) {
-    const excerptArray = (item.split(' ')).slice(0,37)
+    const excerptArray = (item.split(' ')).slice(0, 37)
     const excerpt = excerptArray.join(' ')
 
     return excerpt

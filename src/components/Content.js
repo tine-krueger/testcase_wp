@@ -39,10 +39,10 @@ const ContentStyled = styled.div`
     }
 
     @media (min-width: 1200px) {
-        margin: -8em 7em 0;
+        max-width: 1200px;
+        margin: -8em auto 0;
     }
 `
-
 const NavText = styled.p`
     padding: 1em;
     font-weight: bold;

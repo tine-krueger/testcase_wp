@@ -39,10 +39,11 @@ export default function Main() {
 
 
 const TextWrapper = styled.div`
-    padding: 1.5em 1.5em;  
+    padding: 0.1em 1.5em;  
     
     @media (min-width: 1200px) {
-        font-size: 1.2em;
+        padding: 1.5em 2.5em;  
+        font-size: 1.1em;
     }
 `
 

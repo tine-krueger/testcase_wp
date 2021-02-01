@@ -27,7 +27,8 @@ const Card = styled.li`
     margin-bottom: 2em;
     
     img {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     @media (min-width: 768px) {
