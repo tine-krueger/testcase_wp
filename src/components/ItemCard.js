@@ -22,14 +22,28 @@ export default function ItemCard(item) {
 
 const Card = styled.li`
     background: var(--cards);
+    display: grid;
+    gap: 0 1em;
+    margin-bottom: 2em;
     
     img {
         width: 100%;
     }
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: 2fr 5fr;
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 3fr;
+    }
 `
 const Text = styled.div`
     padding: .5em 1em;
-    margin-bottom: 1em;
 
     h3 {
         margin-top: .5em;
@@ -40,5 +54,17 @@ const Text = styled.div`
         font-size: .8em;
     }
 
+    @media (min-width: 992px) {
+        padding: 0 1em;
 
+        p {
+            margin: .75em 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        p {
+            font-size: 1em;
+        }
+    }
 `

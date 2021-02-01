@@ -15,7 +15,7 @@ const BlackFooter = styled.div`
     padding: 1em 0;
     width: 100%;
     position: absolute;
-    bottom: -11em;
+    bottom: -.2em;
     left: 0;
     display: grid;
     background: var(--footerBackground);
@@ -25,6 +25,23 @@ const BlackFooter = styled.div`
         justify-self: center;
         text-transform: uppercase;
         margin: .5em 0;
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 4em;
+
+        p {
+            align-self: center;
+        }
+
+        p:first-child {
+            justify-self: end;
+        }
+
+        p:last-child {
+            justify-self: start;
+        }
     }
 
 `

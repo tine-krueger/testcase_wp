@@ -25,4 +25,13 @@ export default function DynamicItems(number) {
 const ItemsList = styled.ul`
     list-style-type: none;
     padding: 0 1.5em 1em;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+        padding: 0 2.5em 1em;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 10em 1em;
+    }
 `

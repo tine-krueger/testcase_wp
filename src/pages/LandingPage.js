@@ -12,5 +12,5 @@ export default function LandingPage() {
 }
 
 const PageStyled = styled.div`
-    margin-bottom: 10em;
+    padding-bottom: 10em;
 `

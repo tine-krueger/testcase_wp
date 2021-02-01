@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro'
 import elphi_600 from '../assets/elphi_600.jpg'
+import elphi_1000 from '../assets/elphi_1000.jpg'
+import elphi_1900 from '../assets/elphi_1900.jpg'
 
 export default function Header() {
 
@@ -18,25 +20,32 @@ const HeaderElphi =  styled.div`
     background: url(${elphi_600});
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 
-    &:before {
-        content: '';
-        display: block;
-        background-image: radial-gradient(#3e3e3e 33%, transparent 33%);
-        backdrop-filter: saturate(1.3);
-        background-size: 3px 3px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    @media (min-width: 768px) {
+        background: url(${elphi_1000});
+        background-position: center;
+        background-repeat: no-repeat;
     }
+
+    @media (min-width: 992px) {
+        background: url(${elphi_1900});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5em;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 10em;
+    }
+
+
 `
 const Headline = styled.div`
     background: rgba(0,0,0,.2);
     backdrop-filter: blur(3px);
-    border-radius: 5px;
     border: 1px solid var(--secondaryFont);
     position: absolute;
     top: 50%;
@@ -48,4 +57,25 @@ const Headline = styled.div`
         color: var(--secondaryFont);
         margin: .25em .5em;
     } 
+
+    @media (min-width: 768px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+
+    @media (min-width: 992px) {
+        top: 4em;
+        left: 9em;
+    }
+
+    @media (min-width: 1200px) {
+        top: 6em;
+        left: 13em;
+
+        h1 {
+            font-size: 2.8rem;
+        }
+    }
 `
