@@ -1,20 +1,32 @@
 import styled from 'styled-components'
+import { Link, useLocation } from 'react-router-dom'
 import Main from './Main'
 import Divider from './Divider'
 import DynamicItems from './DynamicItems'
-import useItems from '../hooks/useItems'
+
 
 
 export default function Content() {
-    const { items, isLoading } = useItems()
+
+    let query = useQuery()
 
     return(
         <ContentStyled>
             <Main />
             <Divider>Welcome to Hamburg</Divider>
-            {isLoading ? <h4>Loading...</h4> : <DynamicItems items={items}/>}
+            <p>
+                See  
+                <Link to="/items?number=all" > all items </Link>
+                or only the  
+                <Link to="/items?number=3" > first three </Link>
+            </p>
+            <DynamicItems  number={query.get('number') !== null ? query.get('number') : 'all'}/>
         </ContentStyled>
     )
+
+    function useQuery() {
+        return new URLSearchParams(useLocation().search)
+    }
 }
 
 const ContentStyled = styled.div`

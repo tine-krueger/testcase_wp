@@ -1,16 +1,19 @@
 import PropTypes from 'prop-types'
+import useItems from '../hooks/useItems'
 
 DynamicItems.propTypes = {
-    items: PropTypes.array
+    number: PropTypes.object
 }
 
-export default function DynamicItems(items) {
+export default function DynamicItems(number) {
+
+    const { queriedItems, isLoading } = useItems(number)
 
     return(
         
         <>
             <ul>
-                {items.items.map((item, index) => <li key={index}>{item[1]}</li>)}
+                {isLoading ? 'Loading...' : queriedItems.map((item, index) => <li key={index}>{item[1]}</li>)}
             </ul>
         </>
 
