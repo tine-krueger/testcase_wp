@@ -20,7 +20,7 @@ export default function useItems(number) {
             }
             setTimeout(() => setIsLoading(false), 1000)
         })
-
+    // eslint-disable-next-line 
     }, [number])
 
     return { queriedItems, isLoading, error }

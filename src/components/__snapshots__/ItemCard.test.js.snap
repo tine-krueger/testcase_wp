@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Card renders correctly 1`] = `
+.c0 {
+  background: var(--cards);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.c0 img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.c1 {
+  padding: .5em 1em;
+}
+
+.c1 h3 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.c1 p {
+  font-size: .8em;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c0 img {
+    max-width: 45%;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 img {
+    max-width: 30%;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    padding: 0 1em;
+  }
+
+  .c1 p {
+    margin: .75em 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .c1 p {
+    font-size: 1em;
+  }
+}
+
+<div>
+  <li
+    class="c0"
+  >
+    <img
+      alt="Speicherstadt-Cristina-Gottardi/unsplash"
+      src="../../public/img/speicherstadt_600.jpg"
+    />
+    <div
+      class="c1"
+    >
+      <h3>
+        Headline 1
+      </h3>
+      <p>
+        Text example
+      </p>
+    </div>
+  </li>
+</div>
+`;

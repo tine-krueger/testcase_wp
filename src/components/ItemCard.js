@@ -10,7 +10,7 @@ export default function ItemCard(item) {
     const excerpt = getExcerpt(item.item[2])
   
     return(
-        <Card key={item.index}>
+        <Card>
             <img src={item.item[0]} alt='Speicherstadt-Cristina-Gottardi/unsplash'/>
             <Text>
                 <h3>{item.item[1]}</h3>
