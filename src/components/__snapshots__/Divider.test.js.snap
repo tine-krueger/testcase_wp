@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider renders correctly 1`] = `
+.c0 {
+  padding: 1em 0;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--link);
+  color: var(--secondaryFont);
+}
+
+<div>
+  <h2
+    class="c0"
+  >
+    Hello Hamburg
+  </h2>
+</div>
+`;

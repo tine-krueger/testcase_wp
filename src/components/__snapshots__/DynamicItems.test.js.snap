@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dynamic Items renders correctly 1`] = `
+.c0 {
+  list-style-type: none;
+  padding: 0 1.5em 1em;
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 0 2.5em 1em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    padding: 0 10em 1em;
+  }
+}
+
+<div>
+  <ul
+    class="c0"
+  >
+    Loading...
+  </ul>
+</div>
+`;

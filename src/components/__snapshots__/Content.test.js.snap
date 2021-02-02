@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content renders correctly 1`] = `
+.c1 {
+  padding: 0.1em 1.5em;
+}
+
+.c3 {
+  margin-left: -1.5em;
+}
+
+.c3 img {
+  width: 100vw;
+}
+
+.c4 {
+  padding: 1em 0;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--link);
+  color: var(--secondaryFont);
+}
+
+.c6 {
+  list-style-type: none;
+  padding: 0 1.5em 1em;
+  margin-bottom: 0;
+}
+
+.c0 {
+  background: var(--secondaryFont);
+  position: relative;
+  margin-top: -2em;
+}
+
+.c5 {
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.c5 a {
+  color: var(--link);
+}
+
+@media (min-width:1200px) {
+  .c1 {
+    padding: 1.5em 2.5em;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width:922px) {
+  .c2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2em;
+    column-gap: 2em;
+  }
+}
+
+@media (min-width:922px) {
+  .c3 {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .c3 img {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    padding: 0 2.5em 1em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c6 {
+    padding: 0 10em 1em;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    margin: -4em 6em 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 1200px;
+    margin: -8em auto 0;
+  }
+}
+
+@media (min-width:1200px) {
+  .c5 {
+    font-size: 1.3em;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <h2>
+        This is just a Testcase
+      </h2>
+      <div
+        class="c2"
+      >
+        <div>
+          <h3>
+            Dies ist ein Typoblindtext
+          </h3>
+          <p>
+            An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen.
+          </p>
+          <p>
+            Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze "Pangrams". Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog. Oft werden in Typoblindtexte auch fremdsprachige Satzteile eingebaut (AVAIL and Wefox are testing aussi la Kerning), um die Wirkung in anderen Sprachen zu testen.
+          </p>
+          <p>
+            In Lateinisch sieht zum Beispiel fast jede Schrift gut aus. Quod erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten die Zahlen, weswegen nach TypoGb.
+          </p>
+        </div>
+        <div
+          class="c3"
+        >
+          <img
+            alt="Hamburg Hochbahn"
+            src="public_transport_600.jpg"
+            srcset="public_transport_600.jpg 300w, public_transport_1000.jpg 768w"
+          />
+        </div>
+      </div>
+    </div>
+    <h2
+      class="c4"
+    >
+      Welcome to Hamburg
+    </h2>
+    <p
+      class="c5"
+    >
+      See 
+      <a
+        href="/items?number=all"
+      >
+        all items
+      </a>
+       or only the 
+      <a
+        href="/items?number=3"
+      >
+        first three
+      </a>
+    </p>
+    <ul
+      class="c6"
+    >
+      Loading...
+    </ul>
+  </div>
+</div>
+`;

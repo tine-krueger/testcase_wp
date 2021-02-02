@@ -4,7 +4,7 @@ import useItems from '../hooks/useItems'
 import ItemCard from './ItemCard'
 
 DynamicItems.propTypes = {
-    number: PropTypes.object
+    number: PropTypes.string
 }
 
 export default function DynamicItems(number) {
@@ -15,7 +15,7 @@ export default function DynamicItems(number) {
             {
                 isLoading ? 'Loading...' :
                 error ? <p>{error}</p> : 
-                queriedItems.map((item) => <ItemCard item={item} />)
+                queriedItems.map((item, i) => <ItemCard key={i} item={item} />)
             }
         </ItemsList>
 
