@@ -37,7 +37,7 @@ const Card = styled.li`
 
         img {
             max-width: 45%;
-            align-self: flex-start;*/
+            align-self: flex-start;
         }
     }
 
